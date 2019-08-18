@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <p class="p1">WELCOME TO YOUR BOOK LIST</p>
+        <p class="p2">ADD A BOOK AS YOU PLEASE</p>
+    </header>    
+    <body>         
+        
+            <div class="main-div">
+                    <form class="form-div" >         
+                            <input type="text" placeholder="  Book title" class="title"><br><br>
+                            <input type="text" placeholder="  Author" class="author"><br><br>
+                            <input type="text" placeholder="  ISBN#"class="isbn"><br><br>
+                            <input type="button" value='Add Book' class="add-book-btn">
+                    </form>
+               
+                    <table >
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>ISBN#</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody id="book-list" class="book-list">
+                                
+                            </tbody>
+                    </table>
+
+            </div>
+           
+    </body>
+    <script src="main.js"></script>
+</html>
