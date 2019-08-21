@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <header>
         <p class="p1">WELCOME TO YOUR BOOK LIST</p>
@@ -11,28 +13,29 @@
     </header>    
     <body>         
         
-            <div class="main-div">
-                    <form class="form-div" >         
-                            <input type="text" placeholder="  Book title" class="title"><br><br>
-                            <input type="text" placeholder="  Author" class="author"><br><br>
-                            <input type="text" placeholder="  ISBN#"class="isbn"><br><br>
-                            <input type="button" value='Add Book' class="add-book-btn">
-                    </form>
-               
-                    <table >
-                            <thead>
-                              <tr>
-                                <th>Title</th>
-                                <th>Author</th>
-                                <th>ISBN#</th>
-                                <th></th>
-                              </tr>
-                            </thead>
-                            <tbody id="book-list" class="book-list">
-                                
-                            </tbody>
-                    </table>
-
+            <div class="container">
+                    <div class="col-md-6">
+                         <form class="form-group" >         
+                                <input type="text" placeholder="  Book title" class="title form-control"><br><br>
+                                 <input type="text" placeholder="  Author" class="author form-control"><br><br>
+                                <input type="text" placeholder="  ISBN#"class="isbn form-control"><br><br>
+                               <input type="button" value='Add Book' class="add-book-btn btn btn-primary">
+                          </form>
+                    </div>
+                    <div class='col-md-6'>
+                         <table >
+                                <thead>
+                                        <tr>
+                                                <th>Title</th>
+                                                 <th>Author</th>
+                                                <th>ISBN#</th>
+                                                <th></th>
+                                         </tr>
+                                </thead>
+                                <tbody id="book-list" class="book-list">       
+                                 </tbody>
+                         </table>
+                    </div>
             </div>
            
     </body>
