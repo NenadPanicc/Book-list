@@ -3,6 +3,9 @@ body {
     font-family: 'Ubuntu Mono', monospace;
     color:white;
 }
+::placeholder {
+    color:white;
+}
 header {
     text-align: center;
     padding-top:5%;
@@ -33,22 +36,22 @@ input {
     border-color: orange; 
 }
 .title {
-    background-color:orange;
-    color:white;
+    background-color:rgb(248, 220, 168);
+    color:black;
     font-size:1.5rem;
     
 }
 .author {
-    background-color:orange;
-    color:white;
+    background-color:rgb(248, 220, 168);;
+    color:black;
     font-size:1.5rem;
 }
 .isbn {
-    background-color:orange;
-    color:white;
+    background-color:rgb(248, 220, 168);;
+    color:black;
     font-size:1.5rem;
 }
-.add-book-btn {
+.add-book-btn .btn-primary{
     width:7rem;
     font-size: 1rem;
     margin-left:10em;
@@ -56,14 +59,26 @@ input {
     background-color:orange;
     color:white;
 }
+.btn-primary {
+    background-color:orange;
+    color:white;
+}
+.btn-primary:hover{
+    background-color:rgba(243, 135, 12, 0.973);
+    color:white;
+}
 table {
     margin-left:5%;
     padding-top:2%;
-    font-size:2rem;
+    font-size:2.5rem;
     display:inline-block; 
 }
 table th {
     padding-right:15%;
+    font-size:3rem;   
+}
+table tr {
+    
     font-size:2.5rem;   
 }
 .book-list {
@@ -73,271 +88,9 @@ table th {
     padding-right:1rem;
     
 }
-/* ADJUSTING FOR OTHER SCREEN SIZES */
-/* Width of 960 */
-@media only screen and (max-width: 960px){
-    table {
-        margin-left:35%;
-        height:100px;
-        display:inline-block;
-    }
+@media (max-width:720px){
     table th {
-        padding-top:60%;   
-        font-size:2.5rem;
-    }
-    .book-list {
-        font-size:2rem;       
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%;
-    }  
-}
-/* Width of 1000px */
-@media only screen and (max-width: 1000px){
-    table {
-        margin-left:45%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:65%;   
-        font-size:2.5rem;
-    }
-    .book-list {
-        font-size:2rem;      
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%; 
-    } 
-}
-/* Width of 1100px */
-@media only screen and (max-width: 1100px){
-    table {
-        margin-left:45%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:65%;   
-        font-size:2.5rem;
-    }
-    .book-list {
-        font-size:2rem;       
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%; 
-}
-}
-/* Width of 1200px */
-@media only screen and (max-width: 1200px){
-    table {
-        margin-left:45%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:60%;   
-        font-size:2.5rem;
-    }
-    .book-list {
-        font-size:2rem;         
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%; 
-}
-}
-/* Width of 1300px */
-@media only screen and (max-width: 1300px){
-    table {
-        margin-left:45%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:50%;   
-        font-size:2.5rem;
-    }
-    .book-list {
-        font-size:2rem;       
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%; 
-}
-}
-/* Width of 1400px */
-@media only screen and (max-width: 1400px){
-    table {
-        margin-left:50%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:50%;   
-        font-size:2.5rem;
-    }
-    .book-list {
-        font-size:2rem;     
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%; 
-}
-}
-/* Width of 900 */
-@media only screen and (max-width: 900px){
-    table {
-        margin-left:35%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:50%;   
-        font-size:2.5rem;
-    }
-    .book-list {
-        font-size:2rem;   
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%;
-    }
-}
-/* Width of 820 */
-@media only screen and (max-width: 820px){
-    table {
-        margin-left:30%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:50%;   
-        font-size:2.5rem;
-    }
-    .book-list {
-        font-size:2rem;  
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%;  
-    }
-    .title {
-        width:20rem;  
-    }
-    .author {
-        width:20rem;
-    }
-    .isbn {
-        width:20rem;
-    }
-}
-/* Width of 700 */
-@media only screen and (max-width: 720px){
-    table {
-        margin-left:20%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:55%;   
-        font-size:2.0rem;
-    }
-    .book-list {
-        font-size:1.5rem;     
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%;
-    }
-    .title {
-        width:17rem;      
-    }
-    .author {
-        width:17rem;
-    }
-    .isbn {
-        width:17rem;
-    }
-}
-/* Width of 750 */
-@media only screen and (max-width: 720px){
-    table {
-        margin-left:20%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:55%;   
-        font-size:1.5rem;
-    }
-    .book-list {
-        font-size:1.5rem;         
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%;      
-    }
-    .title {
-        width:17rem; 
-    }
-    .author {
-        width:17rem;
-    }
-    .isbn {
-        width:17rem;
-    }
-}
-/* Width of 750 */
-@media only screen and (max-width: 730px){
-    table {
-        margin-left:20%;
-        height:100px;
-        display:inline-block;
-    }
-    table th {
-        padding-top:55%;   
-        font-size:1.5rem;
-    }
-    .book-list {
-        font-size:1.5rem;         
-    }
-    table td {
-        padding-bottom:5%;
-    }
-    .form-div {
-        width:100%;       
-    }
-    .title {
-        width:17rem; 
-    }
-    .author {
-        width:17rem;
-    }
-    .isbn {
-        width:17rem;
+        padding-right:10%;
+        font-size:2.5rem;   
     }
 }
